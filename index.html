@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JEE Exam Tracker</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Configure Tailwind JIT to include dynamic classes for dark mode
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+    <style>
+      /* Define CSS variables for color schemes */
+      :root {
+        /* Default Blue Ocean Theme */
+        --accent-primary: #60a5fa; /* blue-400 */
+        --accent-subtle: #93c5fd; /* blue-300 */
+        --button-gradient-from: #2563eb; /* blue-600 */
+        --button-gradient-to: #06b6d4; /* cyan-500 */
+        --focus-ring-color: #3b82f6; /* blue-500 */
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@jest/globals": "https://aistudiocdn.com/@jest/globals@^30.2.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.0.0"
+  }
+}
+</script>
+</head>
+<body class="antialiased">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root" class="flex-grow flex flex-col"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
